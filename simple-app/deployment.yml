@@ -3,12 +3,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-deployment
+  # run: simple-app
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: trivial-go-web-app
-      run: simple-app
   template:
     metadata:
       labels:
